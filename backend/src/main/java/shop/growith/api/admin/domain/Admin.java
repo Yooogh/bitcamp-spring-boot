@@ -7,5 +7,7 @@ import javax.persistence.*;
 public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "admins_id") private long adminId;
+    @Column private String adminId;
+    @Column private String adminPass;
+    @Column private String adminName;
 }
